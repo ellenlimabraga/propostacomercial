@@ -1,0 +1,137 @@
+:root {
+    --cor-primaria: #4b4596;
+    --cor-secundaria: #e7bcd9;
+    --cor-destaque: #ec6332;
+    --cor-fundo: #4b4596;
+    --cor-texto: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+}
+
+header img {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.secao {
+    background-color: white;
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.secao h2 {
+    color: var(--cor-primaria);
+    border-bottom: 3px solid var(--cor-secundaria);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.servicos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.servico {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.servico h3 {
+    color: var(--cor-destaque);
+    margin-bottom: 10px;
+}
+
+/* Novos estilos para os pacotes */
+.pacote {
+    background-color: #f9f9f9;
+    border-left: 5px solid var(--cor-primaria);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.pacote h3 {
+    color: var(--cor-primaria);
+    margin-bottom: 15px;
+}
+
+.pacote h4 {
+    color: var(--cor-destaque);
+    margin: 15px 0 10px;
+}
+
+.pacote ul {
+    padding-left: 30px;
+}
+
+.extras {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.extras h4 {
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
+}
+
+.extras ul {
+    padding-left: 30px;
+}
+
+
+.processo-onboarding {
+    list-style-type: none;
+}
+
+.processo-onboarding li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.processo-onboarding li:before {
+    content: '✓';
+    color: var(--cor-destaque);
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .servicos {
+        flex-direction: column;
+    }
+}
